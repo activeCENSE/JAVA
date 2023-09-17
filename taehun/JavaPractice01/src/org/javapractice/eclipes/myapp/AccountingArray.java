@@ -14,6 +14,7 @@ public class AccountingArray {
 		double total =  valueOfSupply + VAT;
 		double expense = valueOfSupply * expenseRate;
 		double income = valueOfSupply - expense;
+//		배열
 		double[] rate = {0.5, 0.3, 0.2};
 		
 //		내용
@@ -22,6 +23,8 @@ public class AccountingArray {
 		System.out.println("TOTAL : "+ total);
 		System.out.println("EXPENSE : "+ expense);	
 		System.out.println("INCOME : "+ income);
+		
+		// 배분 반복문
 		for(int i = 0; i< rate.length; i++) {
 		double devidend = income * rate[i];
 		System.out.println("DIVIDEND"+(i+1)+" : "+ devidend);
