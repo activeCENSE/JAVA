@@ -15,9 +15,6 @@ public class AccountingArray {
 		double expense = valueOfSupply * expenseRate;
 		double income = valueOfSupply - expense;
 		double[] rate = {0.5, 0.3, 0.2};
-		double devidend1 = income * rate[0];
-		double devidend2 = income * rate[1];
-		double devidend3 = income * rate[2];
 		
 //		내용
 		System.out.println("Value of supply : "+valueOfSupply);
@@ -25,9 +22,10 @@ public class AccountingArray {
 		System.out.println("TOTAL : "+ total);
 		System.out.println("EXPENSE : "+ expense);	
 		System.out.println("INCOME : "+ income);
-		System.out.println("DIVIDEND 1 : "+ devidend1);
-		System.out.println("DIVIDEND 2 : "+ devidend2);
-		System.out.println("DIVIDEND 3: "+ devidend3);
+		for(int i = 0; i< rate.length; i++) {
+		double devidend = income * rate[i];
+		System.out.println("DIVIDEND"+(i+1)+" : "+ devidend);
+		}
 	}
 
 }
