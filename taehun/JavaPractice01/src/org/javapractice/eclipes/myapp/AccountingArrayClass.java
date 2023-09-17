@@ -7,7 +7,7 @@ class AccountingApp {
     public static double expenseRate;
 
     // 분배 계산 메소드
-    public static void Accounting() {
+    public static void accounting() {
         // 배열
         double[] rate = { 0.5, 0.3, 0.2 };
         for (int i = 0; i < rate.length; i++) {
@@ -52,9 +52,19 @@ public class AccountingArrayClass {
         AccountingApp.vatRate = 0.1;
         AccountingApp.expenseRate = 0.3;
         
-        // Print the results
+        // 결과 값 프린팅
         AccountingApp.print();
-        AccountingApp.Accounting();
+        AccountingApp.accounting();
+        
+        System.out.println("========================\n");
+        //인스턴스 생성
+        AccountingApp a1 = new AccountingApp();
+        a1.valueOfSupply = 20000.0;
+        a1.vatRate = 0.1;
+        a1.expenseRate = 0.3;
+        
+        a1.print();
+        a1.accounting();
     }
 }
 
