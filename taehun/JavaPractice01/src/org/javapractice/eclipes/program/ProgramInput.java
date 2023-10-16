@@ -1,5 +1,4 @@
 package org.javapractice.eclipes.program;
-import javax.swing.JOptionPane;
 
 import org.javapractice.iot.*; // Import Iot All
 

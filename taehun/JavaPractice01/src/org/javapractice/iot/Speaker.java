@@ -1,6 +1,5 @@
 package org.javapractice.iot;
 
-import java.util.Random;
 
 public class Speaker {
 	String _id;
