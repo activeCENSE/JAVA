@@ -19,7 +19,7 @@ public class Code1127_1 {
 		value = mList.get(new Member("ulsan"));
 		System.out.println(value);
 		
-		HashMap<int, String> tList = new HashMap<int, String>();
+//		HashMap<int, String> tList = new HashMap<int, String>();
 		HashMap<Integer, String> cList = new HashMap<Integer, String>();
 		mList.put(new Member("ulsan"), "울산광역시");
 		mList.put(new Member("busan"),"부산광역시");

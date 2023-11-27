@@ -3,8 +3,6 @@ package JavaPractice01.study.study;
 public class Code1106_3 {
 
 	public static void main(String[] args) {
-		int t;
-		System.out.println(t);
 		
 		Animal cat = new Animal();
 		cat.name="고양이";

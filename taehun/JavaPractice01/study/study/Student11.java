@@ -16,7 +16,7 @@ public class Student11 {
 		name = n;
 		sName = sn;
 	}
-
+	//Getter & Setter
 	public String getName() {
 		return name;
 	}

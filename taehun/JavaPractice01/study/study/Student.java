@@ -6,7 +6,7 @@ public class Student {
 	int grade;
 	String idNumber;
 	char gender;
-	private String name;
+	String name;
 	int score;
 	int age;
 	String address;

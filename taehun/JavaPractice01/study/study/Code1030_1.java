@@ -21,7 +21,7 @@ public class Code1030_1 {
 	
 	public static void main(String[] args) {
 		int[] data = new int[5];
-		//intput(data);
+		intput(data);
 		int sum = calSum(args);
 		System.out.println("합계:" + sum);
 		

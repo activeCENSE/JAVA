@@ -5,12 +5,12 @@ public class Code1120_3 {
 	public static void main(String[] args) {
 		Point p = new Point(10,20);
 		Point t = new Point(10,20);
-		if( p == t)
+		if( p == t) // p와 t가 달라요
 			System.out.println("p와 t가 같아요");
 		else
 			System.out.println("p와 t가 달라요");
 		System.out.println("-------------------------");
-		if( p.equals(t))
+		if( p.equals(t)) // p와 t가 달라요.
 			System.out.println("p와 t가 같아요");
 		else
 			System.out.println("p와 t가 달라요");
