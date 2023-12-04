@@ -8,13 +8,13 @@ public class Code1106_2 {
 		int[] temp;
 		temp = new int[3];
 				
-		Student haksung;
-		haksung = new Student();
-		haksung.name ="홍길동";
-		haksung.SchoolName="울산과학대학교";
-		System.out.println(haksung.name);
-		System.out.println(haksung.SchoolName);
-		System.out.println(haksung.score);
+		Student haksung = new Student();
+		haksung.setName("홍길동");
+		haksung.setScore(99);
+		haksung.setSchoolName("울산과학대학교");
+		System.out.println(haksung.getName());
+		System.out.println(haksung.getScore());
+		System.out.println(haksung.getSchoolName());
 		haksung.playGame();
 		
 	}

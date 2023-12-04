@@ -1,25 +1,33 @@
 package JavaPractice01.study.study;
 
 public class Student {
-	String SchoolName;
-	String major;
-	int grade;
-	String idNumber;
-	char gender;
-	String name;
-	int score;
-	int age;
-	String address;
-	
-	void haveLunch(){
-		
+	private String SchoolName;
+	private String name;
+	private int score;
+
+	public String getName() {
+		return name;
 	}
-	void takeClass(){
-		
+	public void setName(String name) {
+		this.name = name;
 	}
-	void takTest() {
-		
+
+	public int getScore() {
+		return score;
 	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public String getSchoolName() {
+		return SchoolName;
+	}
+
+	public void setSchoolName(String schoolName) {
+		SchoolName = schoolName;
+	}
+
 	void playGame() {
 		System.out.println("저는 지금 테트리스 게임을 합니다...");
 	}
