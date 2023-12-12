@@ -21,7 +21,7 @@ public class callFigure {
                     System.out.println("중심좌표 y를 입력하세요");
                     double centerY = sc.nextDouble();
 
-                    Circle circle = new Circle("원형");
+                    Circle circle = new Circle();
 
                     circle.setLength(x, centerX, y, centerY);
                     System.out.println("해당 원의 지름은 " + circle.getLength() + " 입니다.");
@@ -41,7 +41,7 @@ public class callFigure {
                     System.out.println("점 B의 좌표값 y를 입력하세요");
                     double ry2 = sc.nextDouble();
 
-                    Rect rect = new Rect("사각형");
+                    Rect rect = new Rect();
                     rect.setWidth(rx, rx2);
                     System.out.println("사각형의 가로 길이는 " + rect.getWidth() + " 입니다.");
                     rect.setHeight(ry, ry2);
@@ -67,22 +67,22 @@ public class callFigure {
                     System.out.println("점 C의 좌표값 y를 입력하세요");
                     double ty3 = sc.nextDouble();
 
-                    Triangle ta = new Triangle("삼각형");
+                    Triangle ta = new Triangle();
 
                     ta.setLength(tx1, tx2, ty1, ty2);
-                    ta.setWidth(ta.getLength());
+                    double sideA = ta.getLength();
                     ta.setLength(tx2, tx3, ty2, ty3);
-                    ta.setHeight(ta.getLength());
+                    double sideB = ta.getLength();
                     ta.setLength(tx3, tx1, ty3, ty1);
-                    ta.setSide(ta.getLength());
+                    double sideC = ta.getLength();
 
-                    System.out.println("삼각형의 빗변 A 길이는 " + ta.getWidth() + " 입니다.");
-                    System.out.println("삼각형의 빗변 B 길이는 " + ta.getHeight() + " 입니다.");
-                    System.out.println("삼각형의 빗변 C 길이는 " + ta.getSide() + " 입니다.");
-                    ta.getType();
-                    ta.setCircumference();
+                    System.out.println("삼각형의 빗변 A 길이는 " + sideA + " 입니다.");
+                    System.out.println("삼각형의 빗변 B 길이는 " + sideB + " 입니다.");
+                    System.out.println("삼각형의 빗변 C 길이는 " + sideC + " 입니다.");
+                    ta.getType(sideA, sideB, sideC);
+                    ta.setCircumference(sideA, sideB, sideC);
                     System.out.println("삼각형의 둘레는 " + ta.getCircumference() + " 입니다.");
-                    ta.setArea();
+                    ta.setArea(sideA, sideB, sideC);
                     System.out.println("삼각형의 넓이는 " + ta.getArea() + " 입니다.");
                     break;
                 case 4:
