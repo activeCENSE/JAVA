@@ -105,6 +105,12 @@ public class LibManager {
         System.out.println("---------------------");
     }
 
+    static void find(){
+        System.out.println("찾을 도서의 이름을 입력하세요.");
+        String findItem = sc.nextLine();
+        findList(findItem);
+    }
+
     static void remove(){
         String delTitle;
         Book item;
@@ -131,6 +137,8 @@ public class LibManager {
                     insert();
                     break;
                 case 2:
+                    find();
+                    break;
                 case 3:
                     remove();
                     break;
