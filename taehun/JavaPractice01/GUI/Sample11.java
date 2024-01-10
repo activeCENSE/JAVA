@@ -10,7 +10,7 @@ public class Sample11 extends JFrame {
     private ImageIcon[] frImg = {
                                 new ImageIcon("./JavaPractice01/images/apple.jpeg"),
                                 new ImageIcon("./JavaPractice01/images/cherry.jpeg"),
-                                new ImageIcon("./JavaPractice01/images/pear.jpeg")};
+                                new ImageIcon("images/pear.jpeg")};
     private JLabel imgLabel = new JLabel(frImg[0]);
     public Sample11(){
         setTitle("예제");

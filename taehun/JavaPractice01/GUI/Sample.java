@@ -9,7 +9,7 @@ public class Sample extends JFrame {
     private JCheckBox[] cName = new JCheckBox[3];
     private ImageIcon[] images = new ImageIcon[3];
     private String[] names = {"ulsan", "busan", "seoul"};
-    private String[] imageNames = {"./JavaPractice01/images/apple.jpeg", "./JavaPractice01/images/cherry.jpeg", "./JavaPractice01/images/pear.jpeg"};
+    private String[] imageNames = {"./JavaPractice01/images/apple.jpeg", "./JavaPractice01/images/cherry.jpeg", "images/pear.jpeg"};
     private JLabel sumLabel;
     public Sample(){
         setTitle("예제");
