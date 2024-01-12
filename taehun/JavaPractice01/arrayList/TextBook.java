@@ -1,7 +1,5 @@
 package JavaPractice01.arrayList;
 
-import JavaPractice01.arrayList.Book;
-
 public class TextBook extends Book {
 
     private String author;

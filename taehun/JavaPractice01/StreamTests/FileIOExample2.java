@@ -1,6 +1,5 @@
 package JavaPractice01.StreamTests;
 
-import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

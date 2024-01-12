@@ -1,5 +1,8 @@
 package JavaPractice01.StreamTests;
-import java.io.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class IOExample3 {

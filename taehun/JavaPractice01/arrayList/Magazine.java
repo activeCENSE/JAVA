@@ -1,7 +1,5 @@
 package JavaPractice01.arrayList;
 
-import JavaPractice01.arrayList.Book;
-
 public class Magazine extends Book {
 
     private String issn;

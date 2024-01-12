@@ -1,6 +1,9 @@
 package JavaPractice01.StreamTests;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.SequenceInputStream;
 import java.util.Vector;
 
 public class SquenceTest {

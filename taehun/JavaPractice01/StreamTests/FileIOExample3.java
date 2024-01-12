@@ -1,7 +1,6 @@
 package JavaPractice01.StreamTests;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class FileIOExample3 {
     public static void main(String[] args) throws IOException {

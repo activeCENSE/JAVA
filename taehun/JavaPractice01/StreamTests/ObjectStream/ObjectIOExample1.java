@@ -2,7 +2,6 @@ package JavaPractice01.StreamTests.ObjectStream;
 
 import JavaPractice01.StreamTests.ObjectStream.dept.Dept;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
