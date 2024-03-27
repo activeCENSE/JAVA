@@ -7,6 +7,9 @@ import java.util.ArrayList;
 public class IntegerStack implements StackInterface {
     private final ArrayList<Integer> stack = new ArrayList<>();
 
+    public boolean isEmpty(){
+        return stack.isEmpty();
+    }
     @Override
     public int length() {
         return stack.size();

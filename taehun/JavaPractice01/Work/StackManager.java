@@ -13,7 +13,7 @@ public class StackManager {
             String input = sc.nextLine().trim();
             boolean isNumeric = true;
             for(int j = 0; j<input.length(); j++) {
-                if (!Character.isDigit(input.charAt(j))) {
+                if (!Character.isDigit(input.charAt(j))) { //입력된 문자가 숫자형태가 아니라면
                     isNumeric = false;
                 }
             }
@@ -24,12 +24,12 @@ public class StackManager {
             }
         }
         System.out.print("StringStack : ");
-        for(int i = 0; i <= sst.length(); i++){
+        for(int i = 0; !sst.isEmpty(); i++){
             System.out.print( sst.pop() + " ");
         }
         System.out.println();
         System.out.print("IntegerStack : ");
-        for(int i = 0; i <= ist.length(); i++){
+        for(int i = 0; !ist.isEmpty(); i++){
             System.out.print( ist.pop() + " ");
         }
         sc.close();

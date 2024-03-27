@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class StringStack implements StackInterface {
     private final ArrayList<String> stack = new ArrayList<>();
 
+    public boolean isEmpty(){
+        return stack.isEmpty();
+    }
+
     @Override
     public int length() {
         return stack.size();
