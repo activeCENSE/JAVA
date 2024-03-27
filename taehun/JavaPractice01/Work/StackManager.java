@@ -29,7 +29,7 @@ public class StackManager {
         //출력부
         System.out.print("StringStack : ");
         for(int i = 0; !sst.isEmpty(); i++){ //sst의 stack 객체가 빌 때 까지 반복
-            System.out.print(sst.pop() + " ");
+            System.out.print(sst.pop() + " | ");
         }
         System.out.println();
         System.out.print("IntegerStack : ");
