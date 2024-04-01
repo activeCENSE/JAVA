@@ -2,11 +2,10 @@ package JavaPractice01.Work;
 
 import java.util.Scanner;
 
-public class StackManager {
+public class ObjectStackManager {
     public static void main(String[] args) {
         //선언부
-        StringStack sst = new StringStack();
-        IntegerStack ist = new IntegerStack();
+        ObjectStack objs = new ObjectStack();
         Scanner sc = new Scanner(System.in);
 
         //입력부
@@ -21,20 +20,20 @@ public class StackManager {
             }
 
             if(isNumeric) //해당 input 값이 숫자형 이라면?
-                ist.push(Integer.parseInt(input)); //int형으로 파싱하여 IntegerStack에 푸시
+                objs.push(Integer.parseInt(input)); //int형으로 파싱하여 푸시
             else
-                sst.push(input); //StringStack에 푸StackManager시
+                objs.push(input); // 푸시
         }
 
         //출력부
         System.out.print("StringStack : ");
-        for(int i = 0; !sst.isEmpty(); i++){ //sst의 stack 객체가 빌 때 까지 반복
-            System.out.print(sst.pop() + " | ");
+        for(int i = 0; !objs.isEmpty("문자열"); i++){
+            System.out.print(objs.pop("문자열") + " | ");
         }
         System.out.println();
         System.out.print("IntegerStack : ");
-        for(int i = 0; !ist.isEmpty(); i++){ //ist의 stack 객체가 빌 때 까지 반복
-            System.out.print(ist.pop() + " ");
+        for(int i = 0; !objs.isEmpty("정수"); i++){
+            System.out.print(objs.pop("정수") + " ");
         }
         sc.close();
     }
