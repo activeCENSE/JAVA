@@ -2,6 +2,7 @@ package JavaPractice01.DateExample;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateExample1 {
@@ -25,5 +26,9 @@ public class DateExample1 {
         SimpleDateFormat dtFormat = new SimpleDateFormat("yyyyMMdd");
         Date myDate1 = dtFormat.parse(myDate);
         System.out.println(myDate1);
+
+        Calendar today1 = Calendar.getInstance();
+        System.out.println(today1.get(Calendar.YEAR)+"년 " + (today1.get(Calendar.MONTH) + 1) +"월");
+        System.out.println(today1.getTimeZone().getDisplayName());
     }
 }
